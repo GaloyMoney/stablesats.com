@@ -10,7 +10,7 @@
     <meta name="title" content="Stablesats :: Transact USD over Lightning without stablecoins or fiat integration" />
     <meta
       name="description"
-      content="Galoy's Stablesats feature adds a USD account within a Galoy wallet (like Bitcoin Beach Wallet) that people can use to hold “dollar equivalent” balances in the wallet, thus protect themselves from fluctuations in the bitcoin price"
+      content="Stablesats enables Lightning users to hold, send and receive dollars without the use of stablecoins or fiat integration. It aims to solve one of the biggest problems for people living on bitcoin: short-term exchange rate volatility."
     />
 
     <!-- Open Graph / Facebook -->
@@ -182,9 +182,9 @@
                 <h2>How it works</h2>
               </div>
 
-              The current Stablesats implementation (via an automated algorithmic trading system) uses the bitcoin
+              The current Stablesats implementation uses the bitcoin
               derivatives market, specifically an instrument called perpetual inverse swap to create synthetic USD.<br /><br />The
-              diagram below outlines the basic mechanics of this strategy.<br /><br />
+              video below outlines the basic mechanics of this strategy.<br /><br />
 
               More details, definitions and alternative strategies are shared in the
               <a href="https://github.com/GaloyMoney/dealer" target="_blank" rel="noopener noreferrer"
@@ -214,7 +214,7 @@
 
               <ul>
                 <li>
-                  In 2016, Arthur Hayes outlined
+                  In 2015, Arthur Hayes outlined
                   <a
                     href="https://blog.bitmex.com/in-depth-creating-synthetic-usd/"
                     target="_blank"
@@ -236,8 +236,7 @@
                 </li>
               </ul>
 
-              The time for synthetic fiat currencies has arrived. Bitcoin banks using Stablesats on the GaloyMoney open
-              source core banking platform can deliver a meaningful, shitcoin-free solution to millions of Lightning
+              The time for synthetic fiat currencies has arrived. Bitcoin banks using Stablesats can deliver a meaningful solution to millions of Lightning
               Network users seeking volatility protection.
             </div>
           </div>
@@ -314,27 +313,29 @@
               <div class="ss-frame39">
                 <div class="ss-faq-header">Is the dealer bot open source?</div>
 
-                Yes, the dealer can be viewed, used and contributed to at
+                Yes, v1 of the dealer can be viewed, used and contributed to at
                 <a href="https://github.com/GaloyMoney/dealer" target="_blank" rel="noopener noreferrer"
-                  >github.com/GaloyMoney/dealer</a
+                  >github.com/GaloyMoney/dealer</a. (dealer v2 in Rust in progress)
                 >
               </div>
               <div class="ss-frame40">
                 <div class="ss-faq-header">
-                  Is there any plan to integrate with the traditional banking system for the fiat wallet?
+                  Is Stablesats currently compatible with the traditional banking system?
                 </div>
 
-                Yes, the USD account found in the wallet could be used for physical USD integration as well. This is on
-                the roadmap, but is managed at the client and country level due to regulations.
+                No, today Stablesats only relies on the bitcoin payment network to work.
               </div>
               <div class="ss-frame41">
-                <div class="ss-faq-header">What are the regulatory and jurisdictional requirements for Stablesats?</div>
+                <div class="ss-faq-header">Are there regulatory requirements for Stablesats?</div>
 
-                Regulatory and compliance considerations are the responsibility of the Bitcoin bank building on top of
-                the GaloyMoney infrastructure. The initial rollout of USD Accounts on Bitcoin Beach Wallet will be
-                subject to the wallet’s terms and conditions and other policies.
+                Since Stablestats uses derivatives products, it may require regulatory approval in some countries.
               </div>
               <div class="ss-frame42">
+                <div class="ss-faq-header">Can Stablesats synthetic USD accounts be funded from a traditional bank account?</div>
+
+                In the future it may be possible to fund accounts using traditional banking rails, but this functionality has not yet been developed. If interested in this functionality, reach out at biz.galoy.io.
+              </div>
+              <div class="ss-frame43">
                 <div class="ss-faq-header">Want to ask a question?</div>
 
                 Join us in the Stablesats channel at
