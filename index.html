@@ -271,44 +271,34 @@
                 <tr>
                   <th class="corner"></th>
                   <th>Where is the Trust</th>
-                  <th>Regulatory Dependency</th>
+                  <th>Banking access required</th>
                   <th>Fees</th>
-                  <th>Yield</th>
-                  <th>Bank account/legacy integration</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>Dollar</td>
                   <td>Bank</td>
-                  <td>Extremely high</td>
+                  <td>Yes, for the user</td>
                   <td>High</td>
-                  <td>None</td>
-                  <td>Yes</td>
                 </tr>
                 <tr>
-                  <td>USDT</td>
+                  <td>Stablecoins</td>
                   <td>Issuer</td>
-                  <td>High</td>
+                  <td>Yes, for the issuer</td>
                   <td>Low</td>
-                  <td>None</td>
-                  <td>No</td>
                 </tr>
                 <tr class="highlight">
-                  <td>Derivatives</td>
+                  <td>Derivatives (Stablesats)</td>
                   <td>Exchange</td>
-                  <td>Low</td>
+                  <td>None</td>
                   <td>Lowest</td>
-                  <td>Variable, can be negative</td>
-                  <td>No</td>
                 </tr>
                 <tr>
                   <td>DLCFD</td>
                   <td>Oracle</td>
-                  <td>Extremely low</td>
-                  <td>Low-Lowest</td>
+                  <td>None</td>
                   <td>TBD</td>
-                  <td>No</td>
                 </tr>
               </tbody>
             </table>
@@ -381,19 +371,69 @@
               </div>
 
               <div class="ss-faq">
+                <div class="ss-faq-header">How does this compare with projects like Synonym, Taro or RGB that are enabling tokens on Bitcoin?</div>
+
+                The Stablesats project is focused on creating stable value in USD. 
+                There is no token involved other than sats, and only Bitcoin payment rails are being used.
+              </div>
+              
+              <div class="ss-faq">
                 <div class="ss-faq-header">Are there regulatory requirements for Stablesats?</div>
 
                 Since Stablestats uses derivatives products, it may require regulatory approval in some countries.
               </div>
 
               <div class="ss-faq">
+                <div class="ss-faq-header">Are there risks?</div>
+
+                Every fiat product has some risk. For instance if you hold fiat in a bank account and the bank goes under, 
+                you are at risk of losing funds. Similarly, when you stabilize sats, some of the magical powers wear off.
+                 <br /><br />
+                
+                Risks to consider for Stablesats include the following: 
+               
+                <ul>
+                  
+                  <li>
+                      Counterparty risk with the exchange. If the exchange goes under, the collateral may be unrecoverable.
+                  </li>
+                    
+                  <li>
+                      Derivatives exchanges have auto-deleveraging for perpetual contracts. The position could be closed despite 
+                      being in profit. This will lead to an under-hedging situation. 
+                  </li>
+                    
+                  <li>
+                      Funding goes negative for an extended period of time. Historically there has been on average more longs than 
+                      shorts on derivatives exchanges. In this environment, funding is revenue-generating for short positions. This 
+                      might not stay true in the future.
+                  </li>
+                  
+                  <li>
+                      To learn more from Galoy view the <a href="https://github.com/GaloyMoney/dealer" target="_blank" rel="noopener noreferrer">GitHub repo</a>, or read other relevant resources: 
+                      
+                      <a href="https://blog.bitmex.com/luna-brothers-inc/" target="_blank" rel="noopener noreferrer">Luna Bros, Inc.</a>
+                      (Bitcoin-Backed Stablecoins section) and thoughts from <a href="https://twitter.com/kollider_trade/status/1496507594214723590">Kollider</a>.
+                  </li>
+                  
+                </ul>
+                
+              </div>
+              
+              <div class="ss-faq">
                 <div class="ss-faq-header">
-                  Can Stablesats synthetic USD accounts be funded from a traditional bank account?
+                  Is Stablesats vulnerable to the same risks of algorithmic stablecoin projects, some of which have recently blown up?
                 </div>
 
-                In the future it may be possible to fund accounts using traditional banking rails, but this
-                functionality has not yet been developed. If interested in this functionality, reach out at
-                biz.galoy.io.
+                The derivatives contracts placed to create Stablesats are fully collateralized with BTC – for every dollar liability, there is an equivalent dollar worth of value in bitcoin. 
+              </div>
+              
+              <div class="ss-faq">
+                <div class="ss-faq-header">
+                  Is it possible to use “physical” USD from a bank account to send and receive payments over Lightning?
+                </div>
+
+                We are working on this functionality. If this is of interest, reach out to us so we can better understand your requirements.
               </div>
 
               <div class="ss-faq">
