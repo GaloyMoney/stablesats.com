@@ -187,7 +187,7 @@ template {
   --ss-color-gray-light: #ddd;
   --ss-color-light-bg: #fafbff;
 
-  --ss-color-headers: #1C385F;
+  --ss-color-headers: #1c385f;
   --ss-color-text: #374151;
 }
 
@@ -198,9 +198,9 @@ template {
 
 body {
   margin: 0;
-  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
-  color: var(--ss-color-text)
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: var(--ss-color-text);
 }
 
 img {
@@ -241,7 +241,7 @@ ul {
 
 .ss-navlink {
   display: flex;
-  padding: 0.5rem 1rem ;
+  padding: 0.5rem 1rem;
 }
 
 .ss-navlink-icon {
@@ -343,7 +343,7 @@ ul {
   margin-bottom: 0.25rem;
   font-size: 4rem;
   font-weight: bold;
-  color: var(--ss-color-headers)
+  color: var(--ss-color-headers);
 }
 
 .ss-sub-header {
@@ -351,6 +351,41 @@ ul {
   font-size: 1.8rem;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+.table thead tr th {
+  background-color: #2c48f2;
+  color: white;
+  font-weight: 400;
+  border: thin solid #eee;
+  padding: 0.4rem;
+}
+
+.table thead tr th.corner {
+  background-color: unset;
+  border-top: unset;
+  border-left: unset;
+}
+
+.table tbody tr td {
+  border: thin solid #eee;
+  padding: 0.4rem;
+}
+
+.table tbody tr td:first-child {
+  font-weight: 600;
+}
+
+.table .highlight {
+  background-color: #ffe8c4;
+}
+
+.table th,
+.table td {
+  text-align: center;
+}
 
 /*************************/
 
