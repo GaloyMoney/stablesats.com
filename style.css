@@ -536,12 +536,6 @@ table {
   height: 30px;
   margin: 0 8px 0 0;
 }
-.ss-videotext {
-  display: flex;
-  flex-shrink: 1;
-  flex-direction: column;
-  justify-content: center;
-}
 .ss-video {
   margin-bottom: 2rem;
   max-width: 800px;
